@@ -3,35 +3,44 @@
 <html>
 <head id="head">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="main.css"> 
+	<link rel="stylesheet" href="main.css">
 	<meta charset="UTF-8;"/>
-	<title>Politic Revolutionnaire</title>
+	<title id="titular">Hereford Science Olympiad</title>
+	<p id="moto">Veni Vidi Cognovi</p>
+	<p id="moto">I came, I saw, I learned</p>
+	
+	<script src="https://www.desmos.com/api/v1.1/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6" async defer></script>
+	<script>
+		var elt = document.getElementById('calculator');
+		var calculator = Desmos.GraphingCalculator(elt);
+		calculator.setExpression({id:'graph1', latex:'y=x^2'});
+	</script>
 </head>
 
 <body id="body">
-	<div id="enclosing_div">
-		<header id="header">
-			<h1>Politic Revolutionnaire</h1>
-		</header>
-		<section id="section">
-			<section id="javafx">
-			
-			</section>
-		</section>
-		<section id="footer">
-			<p>Notes and Downloads</p>
-			<a href="Biology GT Notes.docx">Biology GT Notes</a>
-			<a href="PreCalculus Notes v2.docx">PreCalculus Notes</a>
-			<a href="Calculus I-III Notes.docx">Calculus I-III Notes</a>
-			<a href="Music Theory Notes.docx">Music Theory Notes</a>
-			<a href="Chemistry Notes.docx">Chemistry Notes</a>
-			<a href="KidneyDialysis.html">Kidney Dialysis</a>
-			<p id="contribute">How to contribute<br>Go to github.com then register an account and sign in. Next go to desktop.github.com and download Github Desktop,
-			login and close it. Then go to https://github.com/Politic-Revolutionnaire/Politic-Revolutionnaire.github.io and click fork repository. Now go to the GitHub
-			application now on your computer and chose a directory to save your files. Go to that directory once you are finished and go to Politic-Revolutionnaire.github.io
-			and add to the notes as you please. Once finished return to the GitHub application on your desktop and select sync and create pull request. The pull request will
-			merge your changes with the updates to the website once approved. Congrats you have become a contributor to Politic-Revolutionnaire.github.io</p>
-		</section>
+	<div id="divis">
+		<div>
+			<img src="science-olympiad.png" alt="Science Olympiad Photo" id="logoSec"></img>
+		</div>
+		<div id="centreFlankTop" align="left">
+			<p id="caput">What is Science Olympiad?</p>
+			<p>Science Olympiad is a series of competitions which challenge your intuition, scientific knowledge, and creativity. They are centred on 23 separate challenges
+			ranging from anatomy to astronomy, chemistry to thermodynamics, building projects to quiz events.</p>
+		</div>
+		<div id="centreFlank">
+			<p id="caput">Why join?</p>
+			<p>Science Olympiad is a great opportunity to interact and learn science while working in a team and in a competitive setting. You can also earn extra-credit in classes by participating in different events or service hours for Science National Honours Society. In addition, science olympiad looks great on college applications. In general, it is a fun, yet also productive way to spend your time.</p>
+			<p id="caput">Where do we meet?</p>
+			<p>Science olympiad meets every Friday for the full hour of enrichment at REDACTED's room.</p>
+			<p id="caput">How do I join?</p>
+			<p>Just show up!</p>
+		</div>
+		<div id="calculator" style="width: 600px; height: 400px;"></div>
 	</div>
+	<section id="footer">
+		<p>Internal Links</p>
+		<a href="Notes.html">Notes</a>
+	</section>
+	<div id="calculator" style="width: 600px; height: 400px;"></div>
 </body>
 </html>
